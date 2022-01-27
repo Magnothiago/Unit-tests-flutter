@@ -6,7 +6,7 @@ class HomeRepository {
 
   HomeRepository(this._dio);
 
-  Future<Conselhos?> getConselhos() async {
+  Future<Conselhos?>? getConselhos() async {
     try {
       Response response = await _dio.get("https://api.adviceslip.com/advice");
 
