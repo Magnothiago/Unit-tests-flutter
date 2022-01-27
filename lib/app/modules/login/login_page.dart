@@ -56,7 +56,7 @@ class _LoginPageState extends ModularState<LoginPage, LoginStore> {
                     borderRadius: BorderRadius.circular(30),
                   ),
                 ),
-                onPressed: () => null,
+                onPressed: () => Modular.to.pushNamed("/home"),
                 child: const Text(
                   'Login',
                   style: TextStyle(color: Colors.white),

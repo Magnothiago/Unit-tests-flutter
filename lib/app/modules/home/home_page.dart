@@ -13,6 +13,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends ModularState<HomePage, HomeStore> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(38, 50, 56, 1),
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(38, 50, 56, 1),
+        title: Text("Home Page"),
+        centerTitle: true,
+        elevation: 0.0,
+      ),
+    );
   }
 }

@@ -1,14 +1,17 @@
+import 'package:dio/dio.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:mockito/mockito.dart';
+
+class MockDio extends Mock implements Dio {}
+
+class MockResponse extends Mock implements Response {}
 
 void main() {
-  String? nome;
+  Dio _dio;
 
   setUp(() {
-    print("setup");
-    nome = 'Nome da pessoa';
+    _dio = MockDio();
   });
 
-  test('login', () {
-    print(nome);
-  });
+  test('Teste com sucesso', () {});
 }
